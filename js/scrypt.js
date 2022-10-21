@@ -11,8 +11,16 @@ btnGenerate.addEventListener('click', function(){
     // AGGIUNGE NOME AL BIGLIETTO
     
     var x = document.getElementById("name").value;
-    console.log(typeof x, x);
-    document.getElementById("name-result").innerHTML = x;    
+    let checkName = x * 4;
+    if(isNaN(checkName)){
+        document.getElementById("name-result").innerHTML = x;  
+    } else {
+        alert('Devi inserire parole');
+        window.location.reload();
+    }
+    console.log("il tipo di checkName è " + typeof checkName, checkName);
+    console.log("il tipo del nome è " + typeof x, x);
+     
 
     
     // CALCOLO DEL PREZZO IN BASE AI KM
@@ -41,12 +49,8 @@ btnGenerate.addEventListener('click', function(){
     } else {
         alert('Devi usare i numeri per i Km');
         window.location.reload();
-    }
-            
-        
-
-    
-
+    }    
+       
     // NUMERI RANDOMICI
     document.getElementById("carriage-result").innerHTML = Math.floor(Math.random()*10 + 1);
     document.getElementById("code-result").innerHTML = Math.floor(Math.random() * (99999 - 90000 + 1) + 90000);
