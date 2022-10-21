@@ -33,6 +33,7 @@ h1 {
     display: block;
 }
 
+
 .form-body, .result-body {
     background-color: #fff;
     border-radius: 10px;
@@ -51,10 +52,22 @@ h1 {
 .name {
     background-color: gray;
     height: 100%;
+    padding: 10px;
+}
+
+.offer, .carriage, .cp-code, .price {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
 }
 
 .generated-ticket {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 100px;
+    margin-top: 20px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    text-align: left;
 }

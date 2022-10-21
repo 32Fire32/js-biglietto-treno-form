@@ -10,7 +10,7 @@ btnGenerate.addEventListener('click', function(){
 
     // AGGIUNGE NOME AL BIGLIETTO
     
-    var x = document.getElementById("name").value;
+    let x = document.getElementById("name").value;
     let checkName = x * 4;
     if(isNaN(checkName)){
         document.getElementById("name-result").innerHTML = x;  
@@ -63,6 +63,7 @@ btnGenerate.addEventListener('click', function(){
 // NASCONDE IL BIGLIETTO IN CASO DI RESET
 hideResult.addEventListener ('click', function (){
     display.classList.remove("ticket-open");
+    document.getElementById('name').reset();
 })
 
 
