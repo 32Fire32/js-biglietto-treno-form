@@ -36,7 +36,9 @@ btnGenerate.addEventListener('click', function(){
             document.getElementById("offer-result").innerHTML = "Biglietto Standard";
     } 
 
-    document.getElementById("carriage-result").innerHTML = Math.floor((Math.random() * (10-1)) +1);
+    document.getElementById("carriage-result").innerHTML = Math.floor(Math.random()*10 + 1);
+    document.getElementById("code-result").innerHTML = Math.floor(Math.random() * (99999 - 90000 + 1) + 90000);
+
     
 })
 
