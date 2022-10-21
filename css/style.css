@@ -13,8 +13,13 @@
     padding: 40px;
 }
 
-.ticket-none {
+
+.ticket-result {
     display: none;
+}
+
+.ticket-open {
+    display: block;
 }
 
 .form-body, .result-body {

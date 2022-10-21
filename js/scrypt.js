@@ -5,6 +5,8 @@ const display = document.querySelector(".ticket-result");
 const hideResult = document.getElementById("hide");
 
 btnGenerate.addEventListener('click', function(){
+    // APRE IL BIGLIETTO
+    display.classList.add("ticket-open");
 
     // AGGIUNGE NOME AL BIGLIETTO
     var x = document.getElementById("name").value;
@@ -33,6 +35,8 @@ btnGenerate.addEventListener('click', function(){
             document.getElementById("price-result").innerHTML = totalPrice.toFixed(2);
             document.getElementById("offer-result").innerHTML = "Biglietto Standard";
     } 
+
+    document.getElementById("carriage-result").innerHTML = Math.floor((Math.random() * (10-1)) +1);
     
 })
 
@@ -40,7 +44,7 @@ btnGenerate.addEventListener('click', function(){
 
 // NASCONDE IL BIGLIETTO IN CASO DI RESET
 hideResult.addEventListener ('click', function (){
-    display.classList.add("ticket-none");
+    display.classList.remove("ticket-open");
 })
 
 
