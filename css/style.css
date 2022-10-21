@@ -13,6 +13,17 @@
     padding: 40px;
 }
 
+button {
+    border: 1px solid #b91450;
+    padding: 4px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+h1 {
+    color: #fff;
+}
+
 
 .ticket-result {
     display: none;
@@ -31,6 +42,10 @@
 .insert-here {
     display: flex;
     justify-content: center;
+}
+
+.insert-here div {
+    margin: 0 1.25rem;
 }
 
 .name {

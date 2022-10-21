@@ -15,27 +15,30 @@ btnGenerate.addEventListener('click', function(){
 
     
     // CALCOLO DEL PREZZO IN BASE AI KM
-    let userKm = document.getElementById("km").value;
-    console.log(userKm);
+    let userKm = Number(document.getElementById("km").value);
+    console.log("il tipo di km inserito è" + typeof userKm);
     let totalPrice = userKm * 0.21;
-    console.log(totalPrice);
+    console.log("il tipo di totalPrice è" + typeof totalPrice);
 
    
     let userAge = document.getElementById("age").value;
 
-    if (userAge === "minorenne") {
-            totalPrice -= totalPrice * 0.2;
-            console.log(totalPrice);
-            document.getElementById("offer-result").innerHTML = "Biglietto Young";
-    } else if (userAge === "over65") {
-            totalPrice -= totalPrice * 0.4;
-            console.log(totalPrice); 
-            document.getElementById("offer-result").innerHTML = "Biglietto Over65";
-    }  else {
-            document.getElementById("price-result").innerHTML = totalPrice.toFixed(2);
-            document.getElementById("offer-result").innerHTML = "Biglietto Standard";
-    } 
+            if (userAge === "minorenne") {
+                totalPrice -= totalPrice * 0.2;
+                console.log(totalPrice);
+                document.getElementById("offer-result").innerHTML = "Biglietto Young";
+        } else if (userAge === "over65") {
+                totalPrice -= totalPrice * 0.4;
+                console.log(totalPrice); 
+                document.getElementById("offer-result").innerHTML = "Biglietto Over65";
+        }  
+        document.getElementById("price-result").innerHTML = totalPrice.toFixed(2);
+        document.getElementById("offer-result").innerHTML = "Biglietto Standard";
+        
 
+    
+
+    // NUMERI RANDOMICI
     document.getElementById("carriage-result").innerHTML = Math.floor(Math.random()*10 + 1);
     document.getElementById("code-result").innerHTML = Math.floor(Math.random() * (99999 - 90000 + 1) + 90000);
 
