@@ -14,27 +14,31 @@
         <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
         <div class="form-body">
                 <div class="insert-here">
-                    <div>
-                        <h3>Nome e Cognome</h3>
-                        <input type="text" id="name" value="" placeholder="Inserisci il nome e il cognome">
-                    </div>
-                    <div>
-                        <h3>Km da percorrere</h3>
-                        <input id="km" type="text" value="" label="Km da percorrere" placeholder="Inserisci i km da percorrere">
-                    </div>
-                    <div>
-                        <h3>Fascia d'età</h3>
-                        <form>
+                    <form>
+                        <div class="insert">
+                        <div>
+                            <h3>Nome e Cognome</h3>
+                            <input type="text" id="name" value="" placeholder="Inserisci il nome e il cognome">
+                        </div>
+                        <div>
+                            <h3>Km da percorrere</h3>
+                              <input id="km" type="text" value="" label="Km da percorrere" placeholder="Inserisci i km da percorrere"> 
+                        </div>
+                        <div>
+                            <h3>Fascia d'età</h3>
                             <select name="age" id="age">
-                            <option value="maggiorenne">Maggiorenne</option>
-                            <option value="minorenne">Minorenne</option>
-                            <option value="over65">Over-65</option>
-                         </select> 
-                        </form>                        
-                    </div>                             
-                </div>
-                <button id="generator" type="button">Genera</button>
-                <button id="hide">Reset</button>                      
+                                <option value="maggiorenne">Maggiorenne</option>
+                                <option value="minorenne">Minorenne</option>
+                                <option value="over65">Over-65</option>
+                             </select>                         
+                        </div>
+                        </div>
+                        <div class="buttons">
+                            <button id="generator" type="button">Genera</button>     
+                            <input id="hide" type="reset" value="Reset">
+                        </div>                         
+                    </form>                         
+                </div>             
         </div>
         <div class="ticket-result">
             <h1>IL TUO BIGLIETTO</h1>

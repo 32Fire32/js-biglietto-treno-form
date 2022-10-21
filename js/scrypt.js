@@ -62,8 +62,7 @@ btnGenerate.addEventListener('click', function(){
 
 // NASCONDE IL BIGLIETTO IN CASO DI RESET
 hideResult.addEventListener ('click', function (){
-    display.classList.remove("ticket-open");
-    document.getElementById('name').reset();
+    display.classList.remove("ticket-open");    
 })
 
 

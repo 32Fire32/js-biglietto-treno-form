@@ -13,7 +13,7 @@
     padding: 40px;
 }
 
-button {
+input, button, select {
     border: 1px solid #b91450;
     padding: 4px;
     font-size: 18px;
@@ -24,7 +24,6 @@ h1 {
     color: #fff;
 }
 
-
 .ticket-result {
     display: none;
 }
@@ -33,19 +32,18 @@ h1 {
     display: block;
 }
 
-
 .form-body, .result-body {
     background-color: #fff;
     border-radius: 10px;
     padding: 30px;
 }
 
-.insert-here {
+.insert {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
-.insert-here div {
+form div {
     margin: 0 1.25rem;
 }
 
